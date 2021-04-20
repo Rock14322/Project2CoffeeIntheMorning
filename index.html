@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  
+    
+    <title>Coffee In The Morning</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script src="main.js"></script>
+        <style>
+    body  {
+        background-color:rgb(255, 208, 0)
+      } 
+    .menu {
+      height: 100%;
+      width: 100%;
+      display: center;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;     
+    }
+    /* The content */
+    .menu {
+      position: relative;
+      top: 46%;
+      width: 75%;
+      text-align: center;
+      margin-top: 30px;
+      margin: auto;
+    }
+    .menu a {
+      float: left;
+      padding: 12px;
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      width: 15%; /* Four links of equal widths */
+      text-align: center;
+    }
+    
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+    @media screen and (max-width: 1200px) {
+      .menu {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+      }
+    }
+      /* If a screen is 600px or less wide, stack the columns on top of each other instead of next to each other */
+      @media screen and (max-width: 640px) {
+        .menu {
+      
+      width: 100%;
+      
+      
+        }
+}
+    
+    
+   </style>
+  </head>
+  <body>  
+    <h1>Coffee
+        In The 
+        Morning
+        <h1> 
+        <!-- The navigation menu -->
+      <div id="menu-bar" class="menu">
+        <div class="menu">
+          <form>
+            <a class="active" href="">Home</a>
+            <a href="">About</a>
+            <a href="">Purchase</a>
+            <a href="">Contact</a>
+            <a href="">Log in</a>
+            
+          </form>
+            </div>
+          </div>
+        <div>
+          <input type="search" class="border p-3 w-full" placeholder="Type your query here..." id='search-term' />
+        <!-- <select> -->
+      </div>
+      <div class='col-span-12 md:col-span-2 p-2 flex justify-center'>        
+        <button id='search-button' class="p-2 w-1/2 md:w-full pr-3 pl-3 text-white bg-blue-500 rounded">Search</button>
+      </div>
+
+      <div class='col-span-12 p-4 border mt-4' id='results'>
+        </div>    
+      <div class="out"></div>
+    </main>
+    
+  </body>
+</html>
