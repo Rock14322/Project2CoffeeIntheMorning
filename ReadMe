@@ -4,3 +4,5 @@ search engine. The design will be developed from the wireFrame.
 The project wedsite allows users to search for coffee gif to see different types of animations.
 The website show two gifs and allows the user to see additional coffee gifs upon request.
 Technology used: HTML, CSS, and Javascript! 
+Within the Mainjs file: The Key will need to be placed in line one and line eight, in order to unlock
+the file.
