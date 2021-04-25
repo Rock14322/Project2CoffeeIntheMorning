@@ -6,3 +6,5 @@ The website show two gifs and allows the user to see additional coffee gifs upon
 Technology used: HTML, CSS, and Javascript! 
 Within the Mainjs file: The Key will need to be placed in line one and line eight, in order to unlock
 the file.
+If this file is open in replit, you will need to change the mainjs to scriptjs in order for the Javascript to 
+link to page.
